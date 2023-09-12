@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training CSS</title>
+
+    <style>
+        body{
+            background-color: black;
+        }
+            /* Especificidade de 0,0,1 */
+        button{
+            background-color: rgb(255, 53, 53) !important;
+        }
+
+            /* Especificidade de 0,1,0 */
+        .btn-sucess{
+            background-color: rgb(21, 255, 21);
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Especificidade de 1,0,0 -->
+    <button style="background-color: blueviolet;" class="btn-sucess">Enviar Mensagem</button>
+
+    <h1></h1>
+</body>
+</html>
+
+<!-- Quanto maior o valor somado, ele irá atribuir o Style.
+Por exmeplo:  001 é menor que 010 portanto 010 será atribuido. 
+100 é maior que todas as outras style, portanto, ela que será ativa. -->
