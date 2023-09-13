@@ -5,8 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./smacss/base.css">
+    <link rel="stylesheet" href="./smacss/layout.css">
+    <link rel="stylesheet" href="./smacss/modules.css">
+    <link rel="stylesheet" href="./smacss/tema-a.css">
+    <link rel="stylesheet" href="./smacss/tema-b.css">
+
 </head>
-<body>
-    <h1>Olá mundo!</h1>
+<body class="tema-b">
+    <div id="header">
+        <div class="container">
+            <h1 class="title">Nome do site</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="">Sobre</a>
+                    </li>
+                    
+                    <li>
+                        <a href="">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="accordion">
+            <header class="accordion-header">
+                Nome do Accordion
+            </header>
+            <p class="accordion-content">
+                Conteudo do Accordion
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="msg msg-is-error">
+                <h5 class="msg-titulo">Atenção:</h5>
+                <p class="msg-conteudo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe rem dignissimos minima iusto molestiae suscipit quas ut incidunt nobis error. Rem quas dolor ipsam recusandae voluptas, ad eligendi rerum animi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Há 2x maneiras de realizar a abertura e fechamento do accordion (Adicionando classes)
+        // const accordions = document.querySelectorAll(".accordion-header");
+        // for (let i = 0; i < accordions.length; i++){
+        //     accordions[i].addEventListener('click', function(evento){
+        //     if(evento.target.parentNode.classList.contains('is-open')){
+        //         evento.target.parentNode.classList.remove('is-open');
+        //     } else {
+        //         evento.target.parentNode.classList.add('is-open');
+        //     }
+        //     })
+        // }
+
+        // A 2x opção para fazer isto de forma muito mais simples seria: 
+
+        const accordions = document.querySelectorAll(".accordion-header");
+        for (let i = 0; i < accordions.length; i++){
+            accordions[i].addEventListener('click', function(evento){
+                evento.target.parentNode.classList.toggle('is-open');
+                // if(evento.target.parentNode.classList.contains('is-open')){
+            //     evento.target.parentNode.classList.remove('is-open');
+            // } else {
+            //     evento.target.parentNode.classList.add('is-open');
+            // }
+            }
+        )}
+    </script>
 </body>
 </html>
