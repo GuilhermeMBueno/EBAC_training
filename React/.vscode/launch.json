@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "https://github.com/GuilhermeMBueno/EBAC_training.git",
+            "request": "launch",
+            "url": "https://github.com/GuilhermeMBueno/EBAC_training.git"
+        }
+    ]
+}
