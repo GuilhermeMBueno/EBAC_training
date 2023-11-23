@@ -1,21 +1,15 @@
-import './perfil.css'
+import styles from './Perfil.module.css';
 
-export default (props) => {
-    // const usuario = {
-    //     nome: 'Guilherme Bueno',
-    //     avatar: 'https://github.com/GuilhermeMBueno.png'
-    // }
-        const {endereco, nome } = props;
-        return (
-            <div>
-                <img className="perfil-avatar" src={endereco}/>
-                <h3 className="perfil-titulo">{nome}</h3>
-            </div>
-        )
-    
+const Perfil = ({ nomeUsuario }) => {
+    return (
+        <header className={styles.header}>
+            <img className={styles.perfilAvatar} src={`https://github.com/${nomeUsuario}.png`}/>
+
+            <h1 className={styles.name}>
+                {nomeUsuario}
+            </h1>
+        </header>
+    )
 }
-    
 
-// const Perfil = () => {
-// }
-// export default Perfil;
+export default Perfil;

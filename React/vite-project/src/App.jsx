@@ -8,7 +8,7 @@ function App() {
   const [formularioEstaVisivel, setFormularioEstaVisivel] = useState(true)
   return (
     <>
-      <Perfil nome="Guilherme" endereco="https://github.com/GuilhermeMBueno.png"/>
+      <Perfil nomeUsuario="GuilhermeMBueno"/>
       <ReposList/>
 
       {/* {formularioEstaVisivel && (
