@@ -49,6 +49,11 @@ export default () => {
 
     return (
         <form>
+            <ul>
+            {[1,2,3,4,5].map(item => (
+                <li key={item}>{item}</li>))}
+            </ul>
+
             <input type="text" placeholder="Seu Nome" onChange={alteraNome}/>
             <input type="number" placeholder="Nota Matéria A" onChange={({ target }) => setMateriaA(parseFloat(target.value))}/>
             <input type="number" placeholder="Nota Matéria B" onChange={evento => setMateriaB(parseFloat(evento.target.value))}/>
