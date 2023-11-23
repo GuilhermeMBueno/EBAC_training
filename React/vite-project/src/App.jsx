@@ -1,18 +1,11 @@
+import Perfil from "./components/Perfil";
+import Formulario from "./components/Formulario";
+
 function App() {
-  const nome = "Guilherme";
-
-  function retornaNome(){
-    return nome;
-  }
-
-  const pessoa = {
-    nome: "Maria"
-  }
-
   return (
     <>
-      <h1>Olá, {pessoa.nome}</h1>
-      <h2>Subtitulo</h2>
+      <Perfil nome="Guilherme" endereco="https://github.com/GuilhermeMBueno.png"/>
+      <Formulario />
     </>
   )
 }
