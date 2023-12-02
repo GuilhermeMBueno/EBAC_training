@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from './Calculadora.module.css'
 
 export default function Calculadora() {
     const [peso, setPeso] = useState('');
@@ -26,7 +27,7 @@ export default function Calculadora() {
         <label>Insira sua altura (em cm):</label>
         <input type="text" value={altura} onChange={(e) => setAltura(e.target.value)}/>
         <button onClick={calculaImc}>Calcular IMC</button>
-        <p>{resultado}</p>
+        <p className={styles.resultado}>{resultado}</p>
         </>
     );
 }
