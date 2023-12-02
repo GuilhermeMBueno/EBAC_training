@@ -1,0 +1,50 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #f2f2f2;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+}
+
+td {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+th:first-child, td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+th:last-child, td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.CorMagro:hover{
+    background-color: #e8eb00;
+}
+.CorNormal:hover{
+    background-color: #a0d490;
+}
+.CorAcimaDoPeso:hover{
+    background-color: #fc956b;
+}
+.CorObesidade:hover{
+    background-color: #f55435;
+}
