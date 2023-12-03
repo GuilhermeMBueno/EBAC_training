@@ -3,3 +3,26 @@
     background-color: rgb(232, 232, 232);
     font-weight: bold;
 }
+
+
+.label{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: sans-serif;
+}
+
+.input{
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.dadoInvalido{
+background-color: red;
+color: #fff;
+border-radius: 10px;
+padding-left: 10px;
+padding-right: 10px;
+
+}

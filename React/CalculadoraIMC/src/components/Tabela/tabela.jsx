@@ -13,11 +13,11 @@ export default function tabela(){
                     <td>Abaixo do peso </td>
                 </tr>
                 <tr className={styles.CorNormal}>
-                    <td>18,6 a 24,9</td>
+                    <td>Entre 18,6 a 24,9</td>
                     <td>Peso normal </td>
                 </tr>
                 <tr className={styles.CorAcimaDoPeso}>
-                    <td>25 a 30</td>
+                    <td>Entre 25 a 30</td>
                     <td>Acima do peso</td>
                 </tr>
                 <tr className={styles.CorObesidade}>
